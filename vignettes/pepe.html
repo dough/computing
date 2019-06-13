@@ -21,12 +21,29 @@
 <h1 class="title">The BUILD language **PEPE**</h1>
 <p class="author">Douglas Harris</p>
 </header>
-<p>Communications Languages</p>
-<p>Four simple concepts called <strong>Push,Pipe,Pull,Pump</strong> describe communicating. You can <em>push</em> information in, and expect it to be <em>pull</em>ed out; or you can deal with information that has been <em>push</em>ed into a <strong>Pipe</strong>, and expect it to be <em>pull</em>ed out. Thus <strong>Pipe</strong> will model storage, and <strong>Push</strong> will model getting information to it.</p>
-<p>Now that we have a notion of how information could get into a system, we think about getting it out by a <strong>Pull</strong> (from storage or from upstream, that is from a Push or a Pipe), preparatory to sending it along, or we could use a <strong>Pump</strong> to pull it in, do something with it, and then push it out.</p>
-<p>Doing a small bit of thinking about those four ideas we notice that one, the <strong>Pipe</strong>, is fully <em>passive</em>, some other component will have to be responsible for moving the information, while another, the <strong>Pump</strong>, is fully <em>active</em>, having total responsibility for the information. The other two components, the <strong>Push</strong> and the <strong>Pull</strong>, are really just to extend the reach of the first two, and can be viewed conceptually as made from them.</p>
-<p>A Push looks like a Pull followed by a Pump (except that it does not have a motive force inside) and a Pull looks like a Pump followed by a Pipe (except for the lack of a motive force inside).</p>
-<p>This tells us that we are only going to need pumps and pipes to build a system, and then think about which parts will be active and which passive when thinking about operating the network. Before devising a <strong>Build</strong> language, which surely will be very complex, one more step might HELP: list the components in the right order.</p>
+<p>Communications Languages: PEPE # Introduction to PEPE</p>
+<p>Four simple concepts called <strong>Push,Pipe,Pull,Pump</strong> describe communications components. Lets give a first person description of what the component sees.</p>
+<ul>
+<li>You can <em>push</em> along information that is pushed to you.</li>
+<li>You can <em>push</em> information into a <strong>Pipe</strong>, expecting it to be <em>pull</em>ed out.</li>
+<li><strong>Push</strong> models sending information.</li>
+<li><p><strong>Pipe</strong> models storing information.</p></li>
+<li>You can <em>pull</em> information out, expecting it to have been provided.</li>
+<li>You can <em>pull</em> information in, process it(maybe by leaving it alone), and <em>push</em> the result out.</li>
+<li><strong>Pull</strong> models receiving information.</li>
+<li><p><strong>Pump</strong> models processing information.</p></li>
+</ul>
+<p>Doing a small bit of thinking about those four ideas:</p>
+<ul>
+<li>the <strong>Pipe</strong>, is fully <em>passive</em>, some other component will have to be responsible for moving the information</li>
+<li><p>the <strong>Pump</strong> is ully <em>active</em>, having total responsibility for information handling.</p></li>
+<li>The <strong>Push</strong> and the <strong>Pull</strong> extend the reach of the first two.</li>
+<li><p>This pair can be viewed conceptually as made from the other pair.</p></li>
+<li>Push looks like Pull followed by Pump (except it does not have a motive force inside).</li>
+<li><p>Pull looks like Pump followed by Pipe (except for the lack of a motive force inside).</p></li>
+</ul>
+<p>This tells us that we are only going to need <em>pump</em>s and <em>pipe</em>s to build a system, and then think about which parts will need to be active and which passive when operating the system.</p>
+<p>Before devising a BUILD language, which surely will be very complex, it might might HELP to list the components in the right order.</p>
 <ul>
 <li>Pus<strong>h</strong></li>
 <li>Pip<strong>e</strong></li>
@@ -34,23 +51,25 @@
 <li>Pum<strong>p</strong></li>
 </ul>
 <p>If you are ready, remember that to construct a written language you typically give the <em>alphabet</em>, a dictionary of the <em>words</em>, which are a selection of strings from the alphabet, and a <em>grammar</em> which shows the syntax for sentences. It is very complicated.</p>
-<ul>
-<li><em>alphabet</em> <strong>p</strong>, <strong>e</strong></li>
-<li><em>grammar</em> <strong>the letters must alternate</strong>.</li>
-</ul>
-<p>Here are some phrases</p>
+<h1 id="tne-alphabet-dictionary-and-grammar-for-pepe">Tne alphabet, dictionary, and grammar for PEPE</h1>
+<h2 id="alphabet-p-e"><em>alphabet</em> <strong>p</strong>, <strong>e</strong></h2>
+<h2 id="grammar-the-letters-must-alternate."><em>grammar</em> <strong>the letters must alternate</strong>.</h2>
+<h1 id="becoming-fluent-in-pepe">Becoming fluent in PEPE</h1>
+<p>Here are some samples:</p>
 <ul>
 <li><em>pep</em></li>
 <li><em>epe</em></li>
 <li><em>pepe</em></li>
 <li><em>epepepe</em></li>
 </ul>
+<h2 id="style-guide-for-pepe">Style guide for PEPE</h2>
 <p>Its easy to write a composition of any length:</p>
 <ul>
 <li>write either <em>p</em> or <em>e</em> and the composition writes itself</li>
 <li>until the desired length is reached (or you run out of time, or patience, or letters).</li>
 </ul>
 <p>Not very hard to use this language, and there are only two sentences of any particular length, determined by the first letter!</p>
+<h2 id="meaning-in-pepe">Meaning in PEPE</h2>
 <p>Oh, I forgot the <em>dictionary</em>:</p>
 <p>There are four words:</p>
 <ul>
@@ -72,6 +91,9 @@
 <p>That models communications very closely; you can build a means of communication, and learn that it can be described and even used in ways you did not anticipate.</p>
 <p>We have just learned the entire language <strong>PEPE</strong>. You might rather call it <strong>EPEP</strong>.</p>
 <p>If you are ready for meaning call for <strong>HELP</strong>.</p>
-<p>(Pictures will be added soon-worth more than 4 words).</p>
+<h1 id="operating-a-system-built-with-pepe">Operating a System built with PEPE</h1>
+<p>There seems to be a lack of responsibility so far; who sees that all these pushes and pulls are synchronized!</p>
+<p>That is up to the operator, and we will devise a new language, not quite so complex,</p>
+<p>which will be called ACAC, although some will prefer the name CACA.</p>
 </body>
 </html>
