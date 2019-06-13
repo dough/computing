@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>pepe</title>
+  <meta name="author" content="Douglas Harris" />
+  <title>The BUILD language **PEPE**</title>
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -16,17 +17,48 @@
   <![endif]-->
 </head>
 <body>
-	<h1>The language PEPE </h1>
-	<h2>for building communications networks</h2>
-<p>Four simple concepts called <strong>Push,Pipe,Pull,Pump</strong> describe communicating. You can <em>push</em> information in, and expect it to be <em>pull</em>ed out; or you can deal with information that has been <em>push</em>ed into a <strong>pipe</strong>, and expects to be pulled out. Thus <strong>Pipe</strong> will model storage, and <strong>Push</strong> will model getting information to it.</p>
+<header id="title-block-header">
+<h1 class="title">The BUILD language **PEPE**</h1>
+<p class="author">Douglas Harris</p>
+</header>
+<p>Communications Languages</p>
+<p>Four simple concepts called <strong>Push,Pipe,Pull,Pump</strong> describe communicating. You can <em>push</em> information in, and expect it to be <em>pull</em>ed out; or you can deal with information that has been <em>push</em>ed into a <strong>Pipe</strong>, and expect it to be <em>pull</em>ed out. Thus <strong>Pipe</strong> will model storage, and <strong>Push</strong> will model getting information to it.</p>
 <p>Now that we have a notion of how information could get into a system, we think about getting it out by a <strong>Pull</strong> (from storage or from upstream, that is from a Push or a Pipe), preparatory to sending it along, or we could use a <strong>Pump</strong> to pull it in, do something with it, and then push it out.</p>
-<p>Doing a small bit of thinking about those four ideas we notice that one, the <strong>Pipe</strong>, is fully <em>passive</em>, some other component will have to be responsible for moving the information, while another, the <strong>Pump</strong>, is fully <em>active</em>, having totl responsibility for the information. The other two components, the <strong>Push</strong> and the <strong>Pull</strong>, are really just to extend the reach of the first two, and can be viewed conceptually as made from them.</p>
+<p>Doing a small bit of thinking about those four ideas we notice that one, the <strong>Pipe</strong>, is fully <em>passive</em>, some other component will have to be responsible for moving the information, while another, the <strong>Pump</strong>, is fully <em>active</em>, having total responsibility for the information. The other two components, the <strong>Push</strong> and the <strong>Pull</strong>, are really just to extend the reach of the first two, and can be viewed conceptually as made from them.</p>
 <p>A Push looks like a Pull followed by a Pump (except that it does not have a motive force inside) and a Pull looks like a Pump followed by a Pipe (except for the lack of a motive force inside).</p>
-<p>This tells us that we are only going to need pumps and pipes to build our system, and then we can think about which parts will be active and which passive when we think about operating the network. Before devising a <strong>Build</strong> language, which surely will be very complex, one more step might help us remember the components: write <strong>HELP</strong>, and notice that the four letters are the last letters of the four major components <strong>Push:Pipe:Pull:Pump</strong>!</p>
-<p>If you are ready, remember that to construct a written language you typically give the <em>alphabet</em>, a dictionary of the <em>words</em>, which are a selection of strings from the alphabet, and a grammar which shows the syntax for <em>sentences</em>. It is very complicated.</p>
-<p>Our <em>alphabet</em> will consist of two letters p and e; the grammatical rules are very simple - <strong>the letters must alternate</strong>. We are done. Lets write two complex phrases to see how it goes: lets write <em>pep</em> and <em>epe</em>.</p>
-<p>Its pretty easy to write a composition of any length: just start by writing either <em>p</em> or <em>e</em>, and then the composition writes itself, and you go until the desired length is reached (or you run out of time, or patience, or letters). Not very hard to use this language, and there are only two sentences of any particular length, determined by the first letter!</p>
-<p>Oh, what about a <em>dictionary</em> of words? Well if you insist on these there are exactly four possible: <strong>h</strong>, <strong>e</strong>, <strong>l</strong>, and <strong>p</strong>. Its kind of easy to think this way, but you may not be used to the fact that the grammar is already determined only by the letters used, and you can think afterwards about what the author might have had in mind.</p>
+<p>This tells us that we are only going to need pumps and pipes to build a system, and then think about which parts will be active and which passive when thinking about operating the network. Before devising a <strong>Build</strong> language, which surely will be very complex, one more step might HELP: list the components in the right order.</p>
+<ul>
+<li>Pus<strong>h</strong></li>
+<li>Pip<strong>e</strong></li>
+<li>Pul<strong>l</strong></li>
+<li>Pum<strong>p</strong></li>
+</ul>
+<p>If you are ready, remember that to construct a written language you typically give the <em>alphabet</em>, a dictionary of the <em>words</em>, which are a selection of strings from the alphabet, and a <em>grammar</em> which shows the syntax for sentences. It is very complicated.</p>
+<ul>
+<li><em>alphabet</em> <strong>p</strong>, <strong>e</strong></li>
+<li><em>grammar</em> <strong>the letters must alternate</strong>.</li>
+</ul>
+<p>Here are some phrases</p>
+<ul>
+<li><em>pep</em></li>
+<li><em>epe</em></li>
+<li><em>pepe</em></li>
+<li><em>epepepe</em></li>
+</ul>
+<p>Its easy to write a composition of any length:</p>
+<ul>
+<li>write either <em>p</em> or <em>e</em> and the composition writes itself</li>
+<li>until the desired length is reached (or you run out of time, or patience, or letters).</li>
+</ul>
+<p>Not very hard to use this language, and there are only two sentences of any particular length, determined by the first letter!</p>
+<p>Oh, I forgot the <em>dictionary</em> of words? ` There are four:</p>
+<ul>
+<li>h spelled ep</li>
+<li>e</li>
+<li>l spelled pe</li>
+<li>p</li>
+</ul>
+<p>You may not be used to the fact that the grammar is already determined by the letters used, and you can think afterwards about what the author might have had in mind.</p>
 <p>For example I write <em>epepe</em>. I might have meant exactly that; or maybe I meant <em>lle</em>, or could I have intended <em>ehh</em>! Oh, this grammar is simple, but it is ambiguous!</p>
 <p>That models communications very closely; you can build a means of communication, and learn that it can be described and even used in ways you did not anticipate. The language we have just learned, fully, could be named perhaps <strong>EPEP</strong> or <strong>PEPE</strong>. If you want to think about meaning, and so bring in extensions, maybe just call for <strong>HELP</strong>.</p>
 </body>
