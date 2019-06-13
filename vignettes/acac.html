@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Douglas Harris" />
+  <title>The OPERATIONS language **ACAC**</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The OPERATIONS language **ACAC**</h1>
+<p class="author">Douglas Harris</p>
+</header>
+<p>Now that a network has been constructed we need to think about how it will operate. Even more important (and not always done) is to think about how it SHOULD be operated before it is built.</p>
+<p>The phrase “be operated” is vital; even an automated system is operated, if properly done that is exactly what we will be discussing with the language discussed here.</p>
+<p>The language is called <strong>ACAC</strong> (or <strong>CACA</strong>), and the letters remind us of the basic tasks of <em>Creating</em> and <em>Absorbing</em> information.</p>
+<p>When in <strong>PEPE</strong> we talk about <em>push</em> and <em>pull</em> very obvious questions arise. There is <em>information</em> and there are <em>components</em>, and the terms relate to both. Of course you may know the component the information is coming from or going to, but what about the information itself?</p>
+<p>Two new concepts enter our thought: a <strong>Source</strong> is something information comes from, and a <strong>Sink</strong> something it goes to. Both sound perhaps like a storage unit, in PEPE terms a <strong>Pipe</strong>, and that is a proper <em>passive</em> view.</p>
+<p>A Source has been <em>push</em>ed already, so we can just <em>pull</em> it when we need to, perhaps many times and from man places, perhaps indirectly through <strong>Pull</strong>s. and that is the <strong>passive view</strong>. But we will always get the same information. It may change because the source is replaced, but we have no control.</p>
+<p>A <em>passive</em> Sink is similar in reverse. We <em>push</em> a <strong>Sink</strong> whenever we are supposed to, and the information is potentially gone forever. If retrieval were ever to be desired a <strong>Pipe</strong> would have been used in the design.</p>
+<p>My personal model for Source and Sink has always come from the model used in network benchmarking measurements for speed. You want to consider only communications time, not processing, so a Sink just throws the data away, never even writing it into memory or storage, and a Source just gives out predetermined data that may even be constant, so the benchmark will be repeatably the same.</p>
+<p>When it comes to <em>active</em> Sources and Sinks, a whole new question emerges. Do we need to tell them we want action, or do we just go ahead. For example on output we may want an acknowledgment that a buffer has been pulled before we push new data, and on input we may want to know that new data has been pushed dand should now be pulled.` Environmental measurements are often a good example: you may only need to show the current temperature, not to remark “its getting hotter!” or to ask “did you see how hot it was?”.</p>
+<p>These considerations say that “Have You Created?” may be important to ask before <strong>Accept</strong>, and “Have You Accepted?” before <strong>Create</strong>.</p>
+<p>A similar set of issues arises with <strong>Push</strong> and <strong>Pull</strong>:</p>
+<ul>
+<li>When a <em>pull</em> operation is done is it to be expected that the right information was already in place,</li>
+<li><p>or is it expected that the <strong>Pull</strong> will notify upstream that new data should be <em>push</em>ed.</p></li>
+<li>Does a <em>push</em> just assume the destination is prepared</li>
+<li><p>or does it politely notify downstream that the old data should be <em>pull</em>ed?</p></li>
+</ul>
+</body>
+</html>
