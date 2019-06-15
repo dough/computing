@@ -56,8 +56,8 @@
 <p>– As the back office <em>send</em>s reponses to us for our writes, we <em>send</em> responses to the customer, often keyed to the way the original request was received.</p>
 <h3 id="processing-back-office">Processing: back office</h3>
 <p>The entire way an organization deals with its customers is encompassed here. It is <em>the business office</em> or <em>the back room</em>, and what goes on here is of necessity not exosed to the public. From here we may communicate with suppliers and authorities, and not expose those communications to the public.</p>
-<p>– When a <em>write</em> from the front office has been pushed in, we negin processing, which will usually involve several <em>store</em>s to the vault. Some of them are for record. often most set in motion activities with various supply chains.</p>
-<p>– As we <em>receive</em> material from the vault, or learn about changes in status (the customer has paid in advance so an order can be released) we may <em>send</em> back to the customer.</p>
+<p>– When a <em>write</em> from <strong>Presentation</strong> has been pushed in, we negin processing, which will usually involve several <em>store</em>s to <strong>Persistence</strong>. Some of them are for record. often most set in motion activities with various supply chains.</p>
+<p>– As we <em>receive</em> material from the vault, or learn about changes in status (maybe the customer has paid in advance so an order can be released) we may <em>send</em> back to the customer.</p>
 <h3 id="persistence-vault">Persistence: vault</h3>
 <p>– our datbasehas its own rules and language</p>
 <p>– we may use remote storage for some records</p>
@@ -71,7 +71,7 @@
 <p>– it must be journaled</p>
 <p>– it involves formal permissions</p>
 <p>– it cannot typically be redone</p>
-<p>– The operation of “the vault” involves out database system, supply chains, accounting, all the aspects of the work that must be done in a formal manner following strict rules. They all are done in a strict <em>send</em>-<em>receive</em> discipline, without the internal dialogue that goes on in the back office.</p>
+<p>– The operation of <strong>Persistence</strong> involves out database system, supply chains, accounting, all the aspects of the work that must be done in a formal manner following strict rules. They all are done in a strict <em>send</em>-<em>receive</em> discipline, without the internal dialogue that goes on in <strong>Processing</strong>.</p>
 <p>A major objective is to see that <strong>Persistence</strong> is buried deep within the organizational structure, and its only contact with <strong>Presentation</strong> is through <strong>Processing</strong>.</p>
 <p>The diagram <a href="//dough.github.io/computing/images/PreProPerWise.png" title="PreProPer solation">PPP isolation</a> makes this structure more clear.</p>
 </body>
